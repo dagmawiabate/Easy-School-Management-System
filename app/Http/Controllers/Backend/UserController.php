@@ -15,7 +15,9 @@ class UserController extends Controller
       
     }
 
-
+    public function UserAdd() {
+      return view('backend.user.add_user');
+    }
 
 
 }

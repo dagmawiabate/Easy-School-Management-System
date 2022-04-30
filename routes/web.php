@@ -36,7 +36,9 @@ Route::get('/admin/logout', [AdminController::class, 'Logout'])->name('admin.log
 
 Route::prefix('users')->group(function(){
 
-Route::get('/user/view', [UserController::class, 'UserView'])->name('user.view');
+Route::get('/view', [UserController::class, 'UserView'])->name('user.view');
+Route::get('/add', [UserController::class, 'UserAdd'])->name('users.add');
+
 
 
 });
