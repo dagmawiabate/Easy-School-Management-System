@@ -42,5 +42,10 @@ class UserController extends Controller
 
     }
 
+    public function UserEdit($id){
+      $editData = User::find($id);
+      return view('backend.user.edit_user',compact('editData'));
+    }
+
 
 }

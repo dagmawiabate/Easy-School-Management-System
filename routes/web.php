@@ -41,7 +41,7 @@ Route::get('/add', [UserController::class, 'UserAdd'])->name('users.add');
 
 Route::post('/store', [UserController::class, 'UserStore'])->name('users.store');
 
-
+Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
 
 });
 
