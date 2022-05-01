@@ -20,7 +20,7 @@
        <div class="row">
        <div class="col">
 
-   <form method="post" action="{{ route('users.store') }}">
+   <form method="post" action="{{ route('users.update', $editData->id) }}">
     @csrf
            <div class="row">
            <div class="col-12">	
@@ -69,18 +69,12 @@
     
   </div>{{-- End Col Md-6 --}}
 
-  
-  
   <div class="col-md-6">
-  
-    <div class="form-group">
-      <h5>User Password <span class="text-danger">*</span></h5>
-      <div class="controls">
-        <input type="password" name="password" class="form-control" required=""> </div>
-    
-    </div>
-  </div> {{-- End Col Md-6 --}}
 
+
+
+  </div>{{-- End Col Md-6 --}}
+  
 
 </div> {{-- End Row --}}
 
