@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\Backend\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,5 +50,13 @@ Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.d
 
 });
 
+// User Profile and Change Password
+Route::prefix('profile')->group(function(){
+
+Route::get('/view', [ProfileController::class, 'ProfileView'])->name('profile.view');
+    
+
+
+});
 
 
