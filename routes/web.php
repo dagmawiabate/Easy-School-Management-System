@@ -57,6 +57,7 @@ Route::get('/view', [ProfileController::class, 'ProfileView'])->name('profile.vi
     
 Route::get('/edit', [ProfileController::class, 'ProfileEdit'])->name('profile.edit');
 
+Route::post('/store', [ProfileController::class, 'ProfileStore'])->name('profile.store');
 
 });
 
