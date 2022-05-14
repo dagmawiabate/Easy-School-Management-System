@@ -33,7 +33,6 @@ Route::middleware([
 Route::get('/admin/logout', [AdminController::class, 'Logout'])->name('admin.logout');
 
 // User Management All Routes
-
 Route::prefix('users')->group(function(){
 
 Route::get('/view', [UserController::class, 'UserView'])->name('user.view');
@@ -58,6 +57,10 @@ Route::get('/view', [ProfileController::class, 'ProfileView'])->name('profile.vi
 Route::get('/edit', [ProfileController::class, 'ProfileEdit'])->name('profile.edit');
 
 Route::post('/store', [ProfileController::class, 'ProfileStore'])->name('profile.store');
+
+Route::get('/password/view', [ProfileController::class, 'PasswordView'])->name('password.view');
+
+Route::post('/password/update', [ProfileController::class, 'PasswordUpdate'])->name('password.update');
 
 });
 
