@@ -1,10 +1,8 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\ProfileController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +13,6 @@ use App\Http\Controllers\Backend\ProfileController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('auth.login');
 });
